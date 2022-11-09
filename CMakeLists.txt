@@ -14,7 +14,15 @@ endif()
 find_package(wxWidgets REQUIRED COMPONENTS net core base)
 MESSAGE( STATUS "find_package(wxWidgets) = ${wxWidgets_LIBRARIES}.")
 include(${wxWidgets_USE_FILE})
-set(src src/main.cpp)
+include_directories(
+  ${PROJECT_SOURCE_DIR}/include
+)
+set(src 
+src/button.cpp
+src/Panels.cpp
+src/Communicate.cpp
+src/main.cpp
+)
 add_executable(${PROJECT_NAME} ${src})
 target_link_libraries(myapp ${wxWidgets_LIBRARIES})
 
