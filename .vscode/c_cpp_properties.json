@@ -8,10 +8,16 @@
                 "/Library/Developer/CommandLineTools/usr/include",
                 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include",
                 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks",
-                "/usr/local/include/wx-3.2/",
-                "/usr/local/lib/wx/include/osx_cocoa-unicode-3.2"
+                "/usr/local/lib/wx/include/osx_cocoa-unicode-static-3.2",
+                "/usr/local/include/wx-3.2/"
             ],
-            "defines": [],
+            "defines": [
+                //不填这里，就没有wx的代码提示
+                "WX_PRECOMP",
+                "__WXOSX_COCOA__",
+                "_FILE_OFFSET_BITS=64",
+                "__ASSERT_MACROS_DEFINE_VERSIONS_WITHOUT_UNDERSCORES=1"      
+            ],
             "macFrameworkPath": [
                 "/Library/Developer/CommandLineTools/SDKs/MacOSX11.0.sdk/System/Library/Frameworks",
                 "/Library/Frameworks",
