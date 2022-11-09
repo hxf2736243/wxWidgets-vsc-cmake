@@ -1,0 +1,21 @@
+{
+    "tasks": [
+        {
+            "type": "cmake",
+            "label": "Cmake: build",
+            "command": "build",
+            "targets": ["all"],
+            "group": "build",
+            "problemMatcher":[],
+            "detail": "cmake build task"
+        },
+        {
+            "type": "cmake",
+            "label": "Cmake: clean",
+            "command": "clean",
+            "problemMatcher":[],
+            "detail": "cmake clean task"
+        }
+    ],
+    "version": "2.0.0"
+}

@@ -1,0 +1,5 @@
+{
+    "cmake.cmakePath": "/Applications/Cmake.app/contents/bin/cmake",
+    "cmake.configureOnOpen": true,
+    "C_Cpp.default.configurationProvider": "ms-vscode.makefile-tools"
+}
